@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.dw.mvvm_kotlin_retrofit">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mvvm_Kotlin_Retrofit"
         tools:targetApi="31">
+        <activity
+            android:name=".FilmActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

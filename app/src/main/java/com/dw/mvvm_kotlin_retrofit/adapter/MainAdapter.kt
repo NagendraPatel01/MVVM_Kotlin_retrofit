@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dw.mvvm_kotlin_retrofit.databinding.LayoutRvItemBinding
+import com.dw.mvvm_kotlin_retrofit.model.Films
 import com.dw.mvvm_kotlin_retrofit.model.Movie
 
 class MainAdapter : RecyclerView.Adapter<MainViewHolder>() {
@@ -17,8 +18,8 @@ class MainAdapter : RecyclerView.Adapter<MainViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainViewHolder {
-        val inflater = LayoutInflater.from(parent.context)
 
+        val inflater = LayoutInflater.from(parent.context)
         val binding = LayoutRvItemBinding.inflate(inflater, parent, false)
         return MainViewHolder(binding)
     }
